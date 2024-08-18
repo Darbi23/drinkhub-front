@@ -1,0 +1,82 @@
+/* Add this to styles.css */
+
+.login-container {
+  display: flex;
+  width: 90%;
+  height: 90vh;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f8f9fa;
+}
+
+.login-image {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-image img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.login-form {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #e74c3c;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #c0392b;
+}
+
+.login-form p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.login-form p a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.login-form p a:hover {
+  text-decoration: underline;
+}

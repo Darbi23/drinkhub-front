@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DrinkHub</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-left">
+          <a href="#" class="logo">DrinkHub</a>
+          <a href="#">Home</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+        </div>
+        <div class="navbar-center">
+          <div class="search-bar">
+            <input type="text" placeholder="Search..." id="search" />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </div>
+        <div class="navbar-right">
+          <a href="#"><i class="fas fa-heart"></i></a>
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-btn"><i class="fas fa-user"></i></a>
+            <div class="dropdown-content">
+              <a href="login.html">Login</a>
+              <a href="register.html">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <aside class="categories">
+        <h3>Categories</h3>
+        <ul>
+          <li><a href="#" onclick="filterProducts('Whiskey')">Whiskey</a></li>
+          <li><a href="#" onclick="filterProducts('Vodka')">Vodka</a></li>
+          <li><a href="#" onclick="filterProducts('Wine')">Wine</a></li>
+          <li><a href="#" onclick="filterProducts('Gin')">Gin</a></li>
+          <li><a href="#" onclick="filterProducts('Liquor')">Liquor</a></li>
+          <li>
+            <a href="#" onclick="filterProducts('Non-alcohol drink')"
+              >Non-alcohol drink</a
+            >
+          </li>
+          <li><a href="#" onclick="filterProducts('All')">All products</a></li>
+        </ul>
+      </aside>
+
+      <div class="banner">
+        <img
+          src="https://www.singlemaltsavvy.com/wp-content/uploads/2022/02/Talisker-30-2021-2.jpg"
+          alt="Banner Image" />
+        <div class="banner-text">
+          <h2>Welcome to DrinkHub</h2>
+          <p>Your one-stop shop for premium beverages</p>
+        </div>
+      </div>
+    </main>
+
+    <section class="products-section">
+      <div class="products-header">
+        <h2 class="section-title">This Week's Sale</h2>
+
+        <a href="product-list.html"
+          ><button class="view-all-btn">View All Products</button></a
+        >
+      </div>
+      <div class="products-slider">
+        <button class="arrow-left" onclick="prevSlide()">&#10094;</button>
+        <div class="products" id="product-list">
+          <!-- Product items will be dynamically added here -->
+        </div>
+        <button class="arrow-right" onclick="nextSlide()">&#10095;</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 DrinkHub</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
